@@ -54,7 +54,7 @@ li {
   border-radius: 50px;
   cursor: pointer;
   margin-top: 1.3rem;
-  padding: 1rem 1rem 1.2rem 1rem;
+  padding: 1rem 1rem 1.3rem 1rem;
   position: fixed;
   right: 20px;
   transition: 0.2s;
@@ -143,6 +143,11 @@ nav li:hover {
   margin-top: 10rem;
 }
 
+.social-links{
+  margin-right: auto;
+  padding-right: 2rem;
+}
+
 .social-links li {
   background-color: rgb(39, 39, 39);
   border: 1px solid transparent;
@@ -175,6 +180,7 @@ main .hero-text {
   display: grid;
   font-size: 2rem;
   padding-top: 21rem;
+  margin-left: 2rem;  
 }
 
 .hero-text {
@@ -403,7 +409,7 @@ main .hero-text {
 }
 
 .about-me {
-  background: linear-gradient(rgba(36, 36, 36, 0.521), rgba(10, 10, 10, 0.678)),
+  background: linear-gradient(rgba(36, 36, 36, 0.521), rgba(10, 10, 10, 0.815)),
     url(img/me.png);
   background-size: cover;
   display: grid;
@@ -419,7 +425,7 @@ main .hero-text {
 
 /* this is actually for the social links in the about section and needs to be renamed */
 .about {
-  margin-top: 9rem;
+  margin-top: 7rem;
 }
 
 .about-clickables li {
@@ -688,6 +694,8 @@ main .hero-text {
   }
 
   .about-clickables{
+    margin-top: 2rem;
+    margin-left: 3rem;
     display: flex;
     flex-direction: row;
   }
@@ -698,13 +706,28 @@ main .hero-text {
 
   #check:checked + .🌭 + nav {
     margin-right: 29rem;
-    opacity: 100;
   }
 
   .hero-text :first-child{
     word-wrap: break-word;
     font-size: 4rem;
     padding-top: 2rem;
+  }
+
+  main .hero-text {
+    margin-left: 2px;  
+  }
+}
+
+@media only screen and (max-width: 375px){
+ .hero-text :first-child{
+    word-wrap: break-word;
+    font-size: 3.5rem;
+    padding-top: 2rem;
+  }
+
+  #check:checked + .🌭 + nav {
+    margin-right: 28rem;
   }
 
 }
