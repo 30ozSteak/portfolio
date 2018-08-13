@@ -45,6 +45,20 @@ li {
   }
 }
 
+@keyframes 🚨{
+  0%{
+    transform: rotate(0);
+  }
+
+  50%{
+    transform: rotate(90deg);
+  }
+
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
 /* 🌭 */
 
 #check {
@@ -96,37 +110,36 @@ li {
   opacity: 100;
 }
 
-/* testing magic again lol */
-/* okay so this works. problem is that the button needs to be a parent of the content, but inside the same container. The button existing inside the main container won't work, because it.... can't reach... outwards? Im not sure. there's gotta be a way to do that. check the lights out tutorial later
- */
+ /* Remix button */
 
- /*  */
-#refresh{
+#remix{
   display: none;
 }
 
-#refresh:checked + .💩 + .portfolio-grid{
+#remix:checked + .💩 + .portfolio-grid{
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
   "p-grid2 p-grid2"
   "p-grid1 p-grid1"
   "p-grid1 p-grid1"
   "p-grid3 p-grid3"
+  "p-grid5 p-grid5"
   "p-grid4 p-grid4"
-  "p-grid4 p-grid4"
-  "p-grid5 p-grid5";
+  "p-grid4 p-grid4";
 }
 
-#refresh:checked + .💩 + .portfolio-grid .p-grid1{
+#remix:checked + .💩 + .portfolio-grid .p-grid1{
   height: 50rem;
 }
 
-#refresh:checked + .💩 +.portfolio-grid .p-grid4{
+#remix:checked + .💩 +.portfolio-grid .p-grid4{
   height: 50rem;
 }
 
-
-
+#remix:checked + .💩  .fa-sync-alt {
+  animation: 🚨 1s linear infinite;
+  color: rgb(83, 165, 83);
+}
 
 .fa-sync-alt{
   padding: 1rem;
@@ -139,12 +152,6 @@ li {
   cursor: pointer;
   z-index: 5;
 }
-
-.fa-sync-alt:hover{
-  animation: ❤️ 1s linear infinite;
-}
-
-
 
 /* nav */
 
@@ -690,7 +697,7 @@ body {
 
   body {
     display: grid;
-    grid-template-rows: 48rem 0 115rem 52rem;
+    grid-template-rows: 48rem 0 1fr 52rem;
   }
 }
 
