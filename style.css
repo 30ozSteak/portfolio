@@ -18,6 +18,7 @@ li {
   list-style-type: none;
 }
 
+
 /* animations */
 
 @keyframes 🦄 {
@@ -94,6 +95,34 @@ li {
   margin-right: 30rem;
   opacity: 100;
 }
+
+/* testing magic again lol */
+
+#refresh{
+  display: none;
+}
+
+#refresh:checked + .💩 + .text-container + .social-links{
+  display: none;
+}
+
+.fa-sync-alt{
+  padding: 1rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.fa-sync-alt:hover{
+  animation: ❤️ 1s linear infinite;
+}
+
+
 
 /* nav */
 
@@ -700,7 +729,6 @@ body {
 
 @media only screen and (max-width: 375px){
  .hero-text :first-child{
-    word-wrap: break-word;
     font-size: 3.5rem;
     padding-top: 2rem;
   }
@@ -715,3 +743,4 @@ body {
     display: none;
   }
 }
+
