@@ -97,14 +97,36 @@ li {
 }
 
 /* testing magic again lol */
+/* okay so this works. problem is that the button needs to be a parent of the content, but inside the same container. The button existing inside the main container won't work, because it.... can't reach... outwards? Im not sure. there's gotta be a way to do that. check the lights out tutorial later
+ */
 
+ /*  */
 #refresh{
   display: none;
 }
 
-#refresh:checked + .💩 + .text-container + .social-links{
-  display: none;
+#refresh:checked + .💩 + .portfolio-grid{
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  "p-grid2 p-grid2"
+  "p-grid1 p-grid1"
+  "p-grid1 p-grid1"
+  "p-grid3 p-grid3"
+  "p-grid4 p-grid4"
+  "p-grid4 p-grid4"
+  "p-grid5 p-grid5";
 }
+
+#refresh:checked + .💩 + .portfolio-grid .p-grid1{
+  height: 50rem;
+}
+
+#refresh:checked + .💩 +.portfolio-grid .p-grid4{
+  height: 50rem;
+}
+
+
+
 
 .fa-sync-alt{
   padding: 1rem;
@@ -200,7 +222,7 @@ nav li:hover {
 
 body {
   display: grid;
-  grid-template-rows: 100vh 150vh 100vh;
+  grid-template-rows: 100vh 0 1fr 100vh;
 }
 
 .hero-text{
@@ -248,7 +270,7 @@ body {
     "p-grid4 p-grid4";
   grid-gap: 1.5rem;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 5rem 5rem;
 }
 
 .p-grid1,
@@ -346,11 +368,6 @@ body {
   grid-area: p-grid2;
 }
 
-.p-grid2 span {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.534);
-  text-shadow: 1px 1px 5px rgba(47, 47, 47, 0.15);
-}
-
 .p-grid2:hover {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
       center / cover
@@ -406,7 +423,6 @@ body {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
   center / cover
       url(img/snow.jpg);
-      border: 1px solid black;
   grid-area: p-grid5;
 }
 
@@ -674,7 +690,7 @@ body {
 
   body {
     display: grid;
-    grid-template-rows: 48rem 115rem 52rem;
+    grid-template-rows: 48rem 0 115rem 52rem;
   }
 }
 
