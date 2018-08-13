@@ -306,16 +306,16 @@ main .hero-text {
   grid-area: p-grid1;
 }
 
-.p-grid1 h5 {
-  font-size: 3.5rem;
-  font-family: "Pacifico";
-}
-
 .p-grid1:hover {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
     center / cover
       url(https://images.unsplash.com/photo-1518528751534-7bed4f1dfb31?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ebcc7e71d19c1c0185a109464d5c836f&auto=format&fit=crop&w=1949&q=80);
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.644);
+  border: 1px solid black;
+}
+
+.p-grid1 h5 {
+  font-size: 3.5rem;
+  font-family: "Pacifico";
 }
 
 .p-grid2 {
@@ -331,10 +331,10 @@ main .hero-text {
 }
 
 .p-grid2:hover {
-  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
-    center / cover
+  background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
+      center / cover
       url(https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=218df997df6af8353f87d87cc4d55296&auto=format&fit=crop&w=1957&q=80);
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.644);
+  border: 1px solid black;
 }
 
 .p-grid2 h5 {
@@ -356,6 +356,7 @@ main .hero-text {
 .p-grid3:hover {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
     center / cover url(img/nickirl.jpg);
+    border: 1px solid black;
 }
 
 .p-grid3 h5 {
@@ -375,10 +376,11 @@ main .hero-text {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
     center / cover
       url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=1950&q=80);
+      border: 1px solid black;
 }
 
 .p-grid4 h5 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 200;
 }
 
@@ -386,6 +388,14 @@ main .hero-text {
   background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
   center / cover
       url(img/snow.jpg);
+  grid-area: p-grid5;
+}
+
+.p-grid5:hover {
+  background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
+  center / cover
+      url(img/snow.jpg);
+      border: 1px solid black;
   grid-area: p-grid5;
 }
 
