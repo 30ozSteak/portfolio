@@ -238,6 +238,7 @@ main .hero-text {
   display: flex;
   flex-direction: column;
   height: 20rem;
+  font-size: 2rem;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -257,7 +258,7 @@ main .hero-text {
   height: 10%;
   opacity: 0;
   position: absolute;
-  transition: 0.4s;
+  transition: 0.3s;
   width: 100%;
 }
 
@@ -278,7 +279,7 @@ main .hero-text {
 }
 
 .p-grid5:after {
-  content: "something different";
+  content: "front end mockup for a snowboarding e-commerce shop";
 }
 
 .p-grid1:hover,
@@ -295,24 +296,6 @@ main .hero-text {
 .p-grid4:hover:after,
 .p-grid5:hover:after {
   bottom: 3rem;
-  opacity: 100;
-}
-
-.p-grid1 p,
-.p-grid2 p,
-.p-grid3 p,
-.p-grid4 p,
-.p-grid5 p {
-  font-weight: 200;
-  font-size: 1rem;
-  opacity: 0;
-}
-
-.p-grid1:hover p,
-.p-grid2:hover p,
-.p-grid3:hover p,
-.p-grid4:hover p,
-.p-grid5:hover p {
   opacity: 100;
 }
 
@@ -336,10 +319,22 @@ main .hero-text {
 }
 
 .p-grid2 {
-  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.692)),
+  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
     center / cover
       url(https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=218df997df6af8353f87d87cc4d55296&auto=format&fit=crop&w=1957&q=80);
   grid-area: p-grid2;
+}
+
+.p-grid2 span {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+  text-shadow: 1px 1px 5px rgba(47, 47, 47, 0.15);
+}
+
+.p-grid2:hover {
+  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
+    center / cover
+      url(https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=218df997df6af8353f87d87cc4d55296&auto=format&fit=crop&w=1957&q=80);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.644);
 }
 
 .p-grid2 h5 {
@@ -348,28 +343,19 @@ main .hero-text {
   text-shadow: 2px 2px 2px black;
 }
 
-.p-grid2 span {
-  color: rgb(0, 153, 255);
-  text-shadow: 1px 1px 5px rgba(47, 47, 47, 0.15);
-  text-decoration: underline;
-}
-
-.p-grid2:hover {
-  background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
-    center / cover
-      url(https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=218df997df6af8353f87d87cc4d55296&auto=format&fit=crop&w=1957&q=80);
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.644);
-}
-
 .p-grid3 {
-  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.692)),
-    center / cover url(img/nickirl.png);
+  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
+    center / cover url(img/nickirl.jpg);
   grid-area: p-grid3;
+}
+
+.p-grid3 h5 span{
+  color: rgb(238, 238, 238);
 }
 
 .p-grid3:hover {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
-    center / cover url(img/nickirl.png);
+    center / cover url(img/nickirl.jpg);
 }
 
 .p-grid3 h5 {
@@ -378,16 +364,11 @@ main .hero-text {
 }
 
 .p-grid4 {
-  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.692)),
+  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
     center / cover
       url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=1950&q=80);
   grid-area: p-grid4;
   text-align: center;
-}
-
-.p-grid4 h5 {
-  font-size: 3.5rem;
-  font-weight: 200;
 }
 
 .p-grid4:hover {
@@ -396,9 +377,25 @@ main .hero-text {
       url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=1950&q=80);
 }
 
+.p-grid4 h5 {
+  font-size: 5rem;
+  font-weight: 200;
+}
+
 .p-grid5 {
-  background-color: rgb(31, 31, 31);
+  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
+  center / cover
+      url(img/snow.jpg);
   grid-area: p-grid5;
+}
+
+.p-grid5 h5{
+  font-weight: 200;
+}
+
+.p-grid5 span {
+  font-family: Pacifico;
+  text-transform: uppercase;
 }
 
 /* personal grid start */
