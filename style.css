@@ -136,6 +136,10 @@ li {
   height: 50rem;
 }
 
+.fa-sync-alt:hover{
+  animation: ❤️ 1s linear infinite;
+}
+
 #remix:checked + .💩  .fa-sync-alt {
   animation: 🚨 1s linear infinite;
   color: rgb(83, 165, 83);
@@ -144,7 +148,7 @@ li {
 .fa-sync-alt{
   padding: 1rem;
   position: fixed;
-  right: 2rem;
+  right: 20px;
   bottom: 2rem;
   font-size: 2rem;
   background-color: rgba(255, 255, 255, 0.87);
