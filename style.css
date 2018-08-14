@@ -122,7 +122,7 @@ li {
   "p-grid2 p-grid2"
   "p-grid1 p-grid1"
   "p-grid1 p-grid1"
-  "p-grid3 p-grid5"
+  "p-grid5 p-grid3"
   "p-grid4 p-grid4"
   "p-grid4 p-grid4";
 }
@@ -133,14 +133,6 @@ li {
 
 #remix:checked + .♻️ +.portfolio-grid .p-grid4{
   height: 50rem;
-}
-
-#remix:checked + .♻️ + .portfolio-grid .p-grid3{
-  background-size: fixed;
-}
-
-#remix:checked + .♻️ + .portfolio-grid .p-grid5{
-  background-size: stretch;
 }
 
 .fa-sync-alt:hover{
@@ -182,7 +174,7 @@ nav ul {
 nav li {
   background-color: rgb(39, 39, 39);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
-  border: 1px solid white;
+  /* border: 1px solid white; */
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -199,20 +191,15 @@ nav li:hover {
 
 /* social links */
 
-.social-links {
-  align-content: end;
-  color: white;
-  text-align: right;
-  margin-right: 1rem;
-}
-
 .landing {
-  margin-top: 10rem;
+  margin-top: 16.5rem;
 }
 
 .social-links{
-  margin-right: auto;
-  padding-right: 2rem;
+  margin-right: 6rem;
+  align-content: end;
+  color: white;
+  text-align: right;
 }
 
 .social-links li {
@@ -785,6 +772,7 @@ body {
 .footer{
   background-color: rgb(39, 39, 39);
   text-align: center;
+  border-top: 1px solid rgb(54, 54, 54);
 
 }
 
