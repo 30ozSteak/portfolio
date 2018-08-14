@@ -116,31 +116,30 @@ li {
   display: none;
 }
 
-#remix:checked + .💩 + .portfolio-grid{
+#remix:checked + .♻️ + .portfolio-grid{
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
   "p-grid2 p-grid2"
   "p-grid1 p-grid1"
   "p-grid1 p-grid1"
-  "p-grid3 p-grid3"
-  "p-grid5 p-grid5"
+  "p-grid3 p-grid5"
   "p-grid4 p-grid4"
   "p-grid4 p-grid4";
 }
 
-#remix:checked + .💩 + .portfolio-grid .p-grid1{
+#remix:checked + ♻️ + .portfolio-grid .p-grid1{
   height: 50rem;
 }
 
-#remix:checked + .💩 +.portfolio-grid .p-grid4{
+#remix:checked + .♻️ +.portfolio-grid .p-grid4{
   height: 50rem;
 }
 
-#remix:checked + .💩 + .portfolio-grid .p-grid3{
+#remix:checked + .♻️ + .portfolio-grid .p-grid3{
   background-size: fixed;
 }
 
-#remix:checked + .💩 + .portfolio-grid .p-grid5{
+#remix:checked + .♻️ + .portfolio-grid .p-grid5{
   background-size: stretch;
 }
 
@@ -148,9 +147,8 @@ li {
   animation: ❤️ 1s linear infinite;
 }
 
-#remix:checked + .💩  .fa-sync-alt {
+#remix:checked + .♻️  .fa-sync-alt {
   animation: 🚨 2s linear infinite;
-  color: rgb(83, 165, 83);
 }
 
 .fa-sync-alt{
@@ -748,7 +746,7 @@ body {
     right: 0;
   }
 
-  .💩{
+  .♻️{
     right: 0;
   }
 
