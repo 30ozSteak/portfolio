@@ -240,7 +240,7 @@ nav li:hover {
 
 body {
   display: grid;
-  grid-template-rows: 100vh 0 1fr 100vh;
+  grid-template-rows: 100vh 0 1fr 100vh 3.5rem;
 }
 
 .hero-text{
@@ -780,5 +780,26 @@ body {
   #check:checked + .🌭 + nav:first-child{
     display: none;
   }
+}
+
+.footer{
+  background-color: rgb(39, 39, 39);
+  text-align: center;
+
+}
+
+.icons{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: rgb(179, 179, 179);
+  padding: 10px;
+  transition: .2s;
+}
+
+.icons i:hover{
+  color: white;
+  cursor: pointer;
 }
 
