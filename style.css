@@ -174,7 +174,6 @@ nav ul {
 nav li {
   background-color: rgb(39, 39, 39);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
-  /* border: 1px solid white; */
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -190,10 +189,6 @@ nav li:hover {
 }
 
 /* social links */
-
-.landing {
-  margin-top: 16.5rem;
-}
 
 .social-links{
   margin-right: 2rem;
@@ -232,26 +227,27 @@ body {
 
 .hero-text{
   display: grid;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
-  padding-top: 21rem;
   margin-left: 2rem;  
   color: black;
   font-weight: 100;
   text-align: left;
+  margin-top: 15rem;
 }
 
 .hero-text :first-child{
-  font-size: 3rem;
-  font-weight: 300;
-  letter-spacing: 0.3rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+  font-size: 12rem;
+  font-weight: 600;
+  text-transform: lowercase;  
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.hero-text span{
+/* .hero-text span{
   animation: 🦄 3s linear infinite;
   color: rgb(239, 120, 255);
-}
+} */
 
 .hero-text :nth-child(3) {
   border-radius: 50px;
@@ -272,7 +268,8 @@ body {
   grid-template-areas:
     "p-grid1 p-grid2"
     "p-grid3 p-grid5"
-    "p-grid4 p-grid4";
+    "p-grid4 p-grid4"
+    "p-grid6 p-grid7";
   grid-gap: 1.5rem;
   justify-content: center;
   padding: 5rem 5rem;
@@ -282,7 +279,9 @@ body {
 .p-grid2,
 .p-grid3,
 .p-grid4,
-.p-grid5 {
+.p-grid5,
+.p-grid6,
+.p-grid7 {
   color: white;
   cursor: pointer;
   display: flex;
@@ -301,7 +300,9 @@ body {
 .p-grid2:after,
 .p-grid3:after,
 .p-grid4:after,
-.p-grid5:after {
+.p-grid5:after,
+.p-grid6:after,
+.p-grid7:after {
   bottom: -5rem;
   font-size: 1.3rem;
   height: 10%;
@@ -331,11 +332,21 @@ body {
   content: "front end mockup for a snowboarding e-commerce shop";
 }
 
+.p-grid6:after {
+  content: "front end mockup for a snowboarding e-commerce shop";
+}
+
+.p-grid7:after {
+  content: "front end mockup for a snowboarding e-commerce shop";
+}
+
 .p-grid1:hover,
 .p-grid2:hover,
 .p-grid3:hover,
 .p-grid4:hover,
-.p-grid5:hover {
+.p-grid5:hover,
+.p-grid6:hover,
+.p-grid7:hover {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
 }
 
@@ -343,7 +354,9 @@ body {
 .p-grid2:hover:after,
 .p-grid3:hover:after,
 .p-grid4:hover:after,
-.p-grid5:hover:after {
+.p-grid5:hover:after,
+.p-grid6:hover:after,
+.p-grid7:hover:after {
   bottom: 3rem;
   opacity: 100;
 }
@@ -371,6 +384,9 @@ body {
     center / cover
       url(https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=218df997df6af8353f87d87cc4d55296&auto=format&fit=crop&w=1957&q=80);
   grid-area: p-grid2;
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-shadow: 2px 2px 2px black;
 }
 
 .p-grid2:hover {
@@ -379,16 +395,12 @@ body {
       url(https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=218df997df6af8353f87d87cc4d55296&auto=format&fit=crop&w=1957&q=80);
 }
 
-.p-grid2 h5 {
-  font-size: 2.5rem;
-  font-weight: 100;
-  text-shadow: 2px 2px 2px black;
-}
-
 .p-grid3 {
   background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
     center / cover url(img/nickirl.jpg);
   grid-area: p-grid3;
+  font-size: 2.5rem;
+  
 }
 
 .p-grid3:hover {
@@ -396,25 +408,18 @@ body {
     center / cover url(img/nickirl.jpg);
 }
 
-.p-grid3 h5 {
-  font-size: 2.5rem;
-}
-
 .p-grid4 {
   background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
     center / cover
       url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=1950&q=80);
   grid-area: p-grid4;
+  font-size: 4rem;  
 }
 
 .p-grid4:hover {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
     center / cover
       url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=1950&q=80);
-}
-
-.p-grid4 h5 {
-  font-size: 4rem;
 }
 
 .p-grid5 {
@@ -540,8 +545,8 @@ body {
 
 .music-grid {
   display: grid;
-  grid-template-columns: repeat(3, 6rem);
-  grid-template-rows: repeat(2, 6rem);
+  grid-template-columns: repeat(3, 6.5rem);
+  grid-template-rows: repeat(2, 6.5rem);
   grid-gap: 1rem 1rem;
   justify-content: center;
 }
@@ -768,26 +773,3 @@ body {
     display: none;
   }
 }
-
-.footer{
-  background-color: rgb(39, 39, 39);
-  text-align: center;
-  border-top: 1px solid rgb(54, 54, 54);
-
-}
-
-.icons{
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  font-size: 2rem;
-  color: rgb(179, 179, 179);
-  padding: 10px;
-  transition: .2s;
-}
-
-.icons i:hover{
-  color: white;
-  cursor: pointer;
-}
-
