@@ -118,22 +118,23 @@ li {
   z-index: 5;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 5rem;
 }
 
-.fa-tablet{
+.fa-tablet-alt{
   padding: .7rem;
   border-radius: 10px;
 }
 
-.fa-tablet:hover{
-  animation: ❤️ 1s linear infinite;
+.fa-tablet-alt:hover{
+  color: rgb(44, 44, 44);
 }
 
 #tablet{
   display: none;
 }
 
-#tablet:checked + .tablet-view + .portfolio-grid{
+#tablet:checked + .tablet-view ~ .portfolio-grid{
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
   "p-grid7 p-grid7"
@@ -145,12 +146,12 @@ li {
   "p-grid6 p-grid2";
 }
 
-#tablet:checked + .tablet-view + .portfolio-grid .p-grid1{
+#tablet:checked + .tablet-view ~ .portfolio-grid .p-grid1{
   height: 50rem;
   font-size: 6rem;
 }
 
-#tablet:checked + .tablet-view +.portfolio-grid .p-grid4{
+#tablet:checked + .tablet-view ~ .portfolio-grid .p-grid4{
   height: 50rem;
   font-size: 6rem;
 }
@@ -164,23 +165,27 @@ li {
 .phone-view{
   cursor: pointer;
   z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
 }
 
 .fa-mobile{
   padding: .7rem;
   border-radius: 10px;
+  font-size: 2rem;
 }
 
 .fa-mobile:hover{
-  animation: ❤️ 1s linear infinite;
+  color: rgb(44, 44, 44);
 }
 
 #phone{
   display: none;
 }
 
-#phone:checked .portfolio-grid{
-  grid-template-columns: repeat(2, 1fr);
+#phone:checked + .phone-view ~ .portfolio-grid{
+  grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
   "p-grid6"
   "p-grid5"
@@ -262,12 +267,13 @@ main{
 
 body {
   display: grid;
-  grid-template-rows: 100vh 0 1fr 100vh;
+  grid-template-rows: 100vh 0 0 1fr 100vh;
   grid-template-areas:
     "m-grid1"
     "m-grid2"
     "m-grid3"
-    "m-grid4";
+    "m-grid4"
+    "m-grid5";
 }
 
 .hero-text{
@@ -313,7 +319,7 @@ body {
   grid-gap: 1.5rem;
   justify-content: center;
   padding: 5rem 5rem;
-  grid-area: m-grid3;
+  grid-area: m-grid4;
 }
 
 .p-grid1,
@@ -510,7 +516,7 @@ body {
 .personal-grid {
   display: grid;
   grid-template-columns: 0.8fr 1fr 1fr;
-  grid-area: m-grid4;
+  grid-area: m-grid5;
 }
 
 .about-me {
