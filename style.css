@@ -135,15 +135,15 @@ li {
   height: 50rem;
 }
 
-.fa-sync-alt:hover{
+.fa-cog:hover{
   animation: ❤️ 1s linear infinite;
 }
 
-#remix:checked + .♻️  .fa-sync-alt {
+#remix:checked + .♻️  .fa-cog {
   animation: 🚨 2s linear infinite;
 }
 
-.fa-sync-alt{
+.fa-cog{
   padding: 1rem;
   position: fixed;
   right: 20px;
@@ -222,7 +222,7 @@ nav li:hover {
 
 body {
   display: grid;
-  grid-template-rows: 100vh 0 1fr 100vh 3.5rem;
+  grid-template-rows: 100vh 0 1fr 100vh;
 }
 
 .hero-text{
@@ -411,7 +411,7 @@ body {
     center / cover
       url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=1950&q=80);
   grid-area: p-grid4;
-  font-size: 4.5rem;
+  font-size: rem;
 }
 
 .p-grid4:hover {
@@ -549,18 +549,12 @@ body {
   background-color: rgb(31, 31, 31);
 }
 
-.music h5 {
+.music p{
   color: rgb(207, 207, 207);
   font-size: 1.5rem;
-  padding: 3rem 1rem;
-}
-
-.music p {
-  color: rgb(207, 207, 207);
-  cursor: pointer;
-  font-size: 1.5rem;
-  padding-top: 1rem;
   text-align: center;
+  padding: 3rem 1rem;
+  transition: .2s;
 }
 
 .music p:hover {
@@ -713,10 +707,12 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
       "p-grid1"
-      "p-grid2"
+      "p-grid7"
       "p-grid3"
       "p-grid5"
-      "p-grid4";
+      "p-grid4"
+      "p-grid6"
+      "p-grid2";
     grid-gap: 1.5rem;
     justify-content: center;
     padding: 5rem 0;
@@ -724,7 +720,7 @@ body {
 
   body {
     display: grid;
-    grid-template-rows: 48rem 0 1fr 52rem;
+    grid-template-rows: 48rem 0 1fr 1fr;
   }
 }
 
