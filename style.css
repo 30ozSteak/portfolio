@@ -294,6 +294,7 @@ body {
   text-align: center;
   text-shadow: 2px 2px 2px black;
   transition: 0.5s ease-in-out;
+  font-size: 2rem;
 }
 
 .p-grid1:after,
@@ -333,11 +334,11 @@ body {
 }
 
 .p-grid6:after {
-  content: "front end mockup for a snowboarding e-commerce shop";
+  content: "an unexpected spin on an old classic";
 }
 
 .p-grid7:after {
-  content: "front end mockup for a snowboarding e-commerce shop";
+  content: "a blog that helps me sleep at night";
 }
 
 .p-grid1:hover,
@@ -366,6 +367,7 @@ body {
     center / cover
       url(https://images.unsplash.com/photo-1518528751534-7bed4f1dfb31?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ebcc7e71d19c1c0185a109464d5c836f&auto=format&fit=crop&w=1949&q=80);
   grid-area: p-grid1;
+  font-size: 3rem;
 }
 
 .p-grid1:hover {
@@ -375,7 +377,6 @@ body {
 }
 
 .p-grid1 h5 {
-  font-size: 3.5rem;
   font-family: "Pacifico";
 }
 
@@ -384,7 +385,6 @@ body {
     center / cover
       url(https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=218df997df6af8353f87d87cc4d55296&auto=format&fit=crop&w=1957&q=80);
   grid-area: p-grid2;
-  font-size: 2.5rem;
   font-weight: 100;
   text-shadow: 2px 2px 2px black;
 }
@@ -399,8 +399,6 @@ body {
   background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
     center / cover url(img/nickirl.jpg);
   grid-area: p-grid3;
-  font-size: 2.5rem;
-  
 }
 
 .p-grid3:hover {
@@ -413,7 +411,7 @@ body {
     center / cover
       url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=1950&q=80);
   grid-area: p-grid4;
-  font-size: 4rem;  
+  font-size: 4.5rem;
 }
 
 .p-grid4:hover {
@@ -439,6 +437,32 @@ body {
 .p-grid5 span {
   font-family: Pacifico;
   text-transform: uppercase;
+}
+
+.p-grid6 {
+  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
+  center / cover
+      url(https://images.unsplash.com/photo-1511745235279-2f7276d5ba65?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24f0e242519a42ad0e49912507064d5d&auto=format&fit=crop&w=1944&q=80);
+  grid-area: p-grid6;
+}
+
+.p-grid6:hover {
+  background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
+  center / cover
+      url(https://images.unsplash.com/photo-1511745235279-2f7276d5ba65?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24f0e242519a42ad0e49912507064d5d&auto=format&fit=crop&w=1944&q=80);
+}
+
+.p-grid7 {
+  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
+  center / cover
+      url(https://images.unsplash.com/photo-1518684542453-94d5620df5f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b529ad36b280c715b20256e095f93ff3&auto=format&fit=crop&w=2033&q=80);
+  grid-area: p-grid7;
+}
+
+.p-grid7:hover {
+  background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
+  center / cover
+      url(https://images.unsplash.com/photo-1518684542453-94d5620df5f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b529ad36b280c715b20256e095f93ff3&auto=format&fit=crop&w=2033&q=80);
 }
 
 /* personal grid start */
