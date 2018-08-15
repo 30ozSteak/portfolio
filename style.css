@@ -774,7 +774,7 @@ body {
 
   body {
     display: grid;
-    grid-template-rows: 48rem 0 0 1fr 1fr;
+    grid-template-rows: 100vh 0 0 1fr 200vh;
   }
 }
 
@@ -798,12 +798,10 @@ body {
   }
 
   .descriptors {
-    margin-top: 2rem;
+    margin-top: 0;
   }
 
   .about-clickables{
-    margin-top: 2rem;
-    margin-left: 2rem;
     display: flex;
     flex-direction: row;
   }
