@@ -721,6 +721,12 @@ body {
 }
 
 @media only screen and (max-width: 1000px){
+
+  .hero-text :first-child{
+    font-size: 8rem;
+    padding-top: 2rem;
+    margin-bottom: 7rem;
+  }
   .about-clickables{
     font-size: 1.3rem;
     width: 7rem;
@@ -767,7 +773,7 @@ body {
 
   body {
     display: grid;
-    grid-template-rows: 48rem 0 1fr 1fr;
+    grid-template-rows: 48rem 0 0 1fr 1fr;
   }
 }
 
@@ -810,7 +816,6 @@ body {
   }
 
   .hero-text :first-child{
-    word-wrap: break-word;
     font-size: 4rem;
     padding-top: 2rem;
   }
