@@ -110,49 +110,52 @@ li {
   opacity: 100;
 }
 
- /* Remix button */
+ /* tablet button */
 
-#remix{
+ .tablet-view{
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-tablet{
+  padding: .5rem;
+}
+
+.fa-tablet:hover{
+  animation: ❤️ 1s linear infinite;
+}
+
+#tablet{
   display: none;
 }
 
-#remix:checked + .♻️ + .portfolio-grid{
+#phone{
+  display: none;
+}
+
+#tablet:checked + .tablet-view + .portfolio-grid{
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  "p-grid2 p-grid2"
+  "p-grid7 p-grid7"
   "p-grid1 p-grid1"
   "p-grid1 p-grid1"
   "p-grid5 p-grid3"
   "p-grid4 p-grid4"
-  "p-grid4 p-grid4";
+  "p-grid4 p-grid4"
+  "p-grid6 p-grid2";
 }
 
-#remix:checked + ♻️ + .portfolio-grid .p-grid1{
+#tablet:checked + .tablet-view + .portfolio-grid .p-grid1{
   height: 50rem;
+  font-size: 6rem;
 }
 
-#remix:checked + .♻️ +.portfolio-grid .p-grid4{
+#tablet:checked + .tablet-view +.portfolio-grid .p-grid4{
   height: 50rem;
-}
-
-.fa-cog:hover{
-  animation: ❤️ 1s linear infinite;
-}
-
-#remix:checked + .♻️  .fa-cog {
-  animation: 🚨 2s linear infinite;
-}
-
-.fa-cog{
-  padding: 1rem;
-  position: fixed;
-  right: 20px;
-  bottom: 2rem;
-  font-size: 2rem;
-  background-color: rgba(255, 255, 255, 0.87);
-  border-radius: 50px;
-  cursor: pointer;
-  z-index: 5;
+  font-size: 6rem;
 }
 
 /* nav */
@@ -411,7 +414,7 @@ body {
     center / cover
       url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=1950&q=80);
   grid-area: p-grid4;
-  font-size: rem;
+  font-size: 4rem;
 }
 
 .p-grid4:hover {
@@ -758,7 +761,7 @@ body {
     right: 0;
   }
 
-  .♻️{
+  .tablet-view{
     right: 0;
   }
 
