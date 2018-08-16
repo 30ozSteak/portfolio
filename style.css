@@ -824,14 +824,24 @@ body {
       "p-grid1"
       "p-grid7"
       "p-grid3"
-      "p-grid5"
+      "p-grid8"
       "p-grid4"
+      "p-grid5"
       "p-grid6"
-      "p-grid2"
-      "p-grid8";
+      "p-grid2";
     grid-gap: 1.5rem;
     justify-content: center;
     padding: 5rem 0;
+  }
+
+  #grids:checked + .grid-view ~ .portfolio-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "p-grid7 p-grid5"
+    "p-grid3 p-grid6"
+    "p-grid1 p-grid2"
+    "p-grid4 p-grid8" ;
+    padding: 5rem 1rem 1rem 1rem;
   }
 
   body {
@@ -852,7 +862,7 @@ body {
   }
 
   .landing{
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 
   .about-me {
@@ -878,7 +888,8 @@ body {
 
   .hero-text :first-child{
     font-size: 4rem;
-    padding-top: 2rem;
+    padding-top: 12rem;
+    margin-bottom: 0rem;
   }
 
   main .hero-text {
@@ -889,7 +900,6 @@ body {
 @media only screen and (max-width: 375px){
  .hero-text :first-child{
     font-size: 3.5rem;
-    padding-top: 2rem;
   }
 
   #check:checked + .🌭 + nav {
