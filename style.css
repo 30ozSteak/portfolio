@@ -110,6 +110,43 @@ li {
   opacity: 100;
 }
 
+/* grid view */
+
+#grids{
+  display: none;
+}
+
+.grid-view{
+  cursor: pointer;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+}
+
+.fa-grip-horizontal{
+  padding: .7rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  position: relative;
+}
+
+.fa-grip-horizontal:hover{
+  color: rgb(80, 80, 80);
+}
+
+#grids:checked + .grid-view ~ .portfolio-grid{
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "p-grid7 p-grid5 p-grid3 p-grid6"
+  "p-grid1 p-grid2 p-grid4 p-grid8";
+  padding: 5rem 1rem 1rem 1rem;
+}
+
+#grids:checked + .grid-view ~ .portfolio-grid section ~ section{
+  font-size: 2rem;
+}
+
  /* tablet button */
 
  .tablet-view{
@@ -127,7 +164,7 @@ li {
 }
 
 .fa-tablet-alt:hover{
-  color: rgb(44, 44, 44);
+  color: rgb(80, 80, 80);
 }
 
 #tablet{
@@ -137,7 +174,7 @@ li {
 #tablet:checked + .tablet-view ~ .portfolio-grid{
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  "p-grid7 p-grid7"
+  "p-grid7 p-grid8"
   "p-grid1 p-grid1"
   "p-grid1 p-grid1"
   "p-grid5 p-grid3"
@@ -167,7 +204,7 @@ li {
   z-index: 5;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5rem;
+  padding-left: 0rem;
 }
 
 .fa-mobile{
@@ -178,7 +215,7 @@ li {
 }
 
 .fa-mobile:hover{
-  color: rgb(44, 44, 44);
+  color: rgb(80, 80, 80);
 }
 
 #phone{
@@ -188,13 +225,14 @@ li {
 #phone:checked + .phone-view ~ .portfolio-grid{
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
-  "p-grid6"
+  "p-grid8"
   "p-grid5"
   "p-grid3"
   "p-grid2"
   "p-grid1"
   "p-grid7"
-  "p-grid4";
+  "p-grid4"
+  "p-grid6";
 }
 
 /* nav */
@@ -268,13 +306,14 @@ main{
 
 body {
   display: grid;
-  grid-template-rows: 100vh 0 0 1fr 100vh;
+  grid-template-rows: 100vh 0 0 0 1fr 100vh;
   grid-template-areas:
     "m-grid1"
     "m-grid2"
     "m-grid3"
     "m-grid4"
-    "m-grid5";
+    "m-grid5"
+    "m-grid6";
 }
 
 .hero-text{
@@ -293,7 +332,6 @@ body {
   font-weight: 600;
   text-transform: lowercase;  
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .hero-text :nth-child(3) {
@@ -316,11 +354,12 @@ body {
     "p-grid1 p-grid2"
     "p-grid3 p-grid5"
     "p-grid4 p-grid4"
-    "p-grid6 p-grid7";
+    "p-grid6 p-grid7"
+    "p-grid8 p-grid8";
   grid-gap: 1.5rem;
   justify-content: center;
-  padding: 5rem 5rem;
-  grid-area: m-grid4;
+  padding: 5rem;
+  grid-area: m-grid5;
 }
 
 .p-grid1,
@@ -329,7 +368,8 @@ body {
 .p-grid4,
 .p-grid5,
 .p-grid6,
-.p-grid7 {
+.p-grid7,
+.p-grid8 {
   color: white;
   cursor: pointer;
   display: flex;
@@ -350,7 +390,8 @@ body {
 .p-grid4:after,
 .p-grid5:after,
 .p-grid6:after,
-.p-grid7:after {
+.p-grid7:after,
+.p-grid8:after {
   bottom: -5rem;
   font-size: 1.3rem;
   height: 10%;
@@ -369,7 +410,7 @@ body {
 }
 
 .p-grid3:after {
-  content: "Talks, Podcasts, and more";
+  content: "Podcasts, Tutorials, Nonsense";
 }
 
 .p-grid4:after {
@@ -377,7 +418,7 @@ body {
 }
 
 .p-grid5:after {
-  content: "front end mockup for a snowboarding e-commerce shop";
+  content: "snowboarding e-commerce shop";
 }
 
 .p-grid6:after {
@@ -388,13 +429,18 @@ body {
   content: "a blog that helps me sleep at night";
 }
 
+.p-grid8:after{
+  content: "never stop exploring";
+}
+
 .p-grid1:hover,
 .p-grid2:hover,
 .p-grid3:hover,
 .p-grid4:hover,
 .p-grid5:hover,
 .p-grid6:hover,
-.p-grid7:hover {
+.p-grid7:hover,
+.p-grid8:hover {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
 }
 
@@ -404,7 +450,8 @@ body {
 .p-grid4:hover:after,
 .p-grid5:hover:after,
 .p-grid6:hover:after,
-.p-grid7:hover:after {
+.p-grid7:hover:after,
+.p-grid8:hover:after {
   bottom: 3rem;
   opacity: 100;
 }
@@ -512,12 +559,26 @@ body {
       url(https://images.unsplash.com/photo-1518684542453-94d5620df5f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b529ad36b280c715b20256e095f93ff3&auto=format&fit=crop&w=2033&q=80);
 }
 
+.p-grid8 {
+  background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
+  center / cover
+      url(https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c43eff2f7cb0c2f6838152683da69f81&auto=format&fit=crop&w=1950&q=80);
+  grid-area: p-grid8;
+}
+
+.p-grid8:hover {
+  background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
+  center / cover
+      url(https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c43eff2f7cb0c2f6838152683da69f81&auto=format&fit=crop&w=1950&q=80);
+}
+
+
 /* personal grid start */
 
 .personal-grid {
   display: grid;
   grid-template-columns: 0.8fr 1fr 1fr;
-  grid-area: m-grid5;
+  grid-area: m-grid6;
 }
 
 .about-me {
@@ -766,7 +827,8 @@ body {
       "p-grid5"
       "p-grid4"
       "p-grid6"
-      "p-grid2";
+      "p-grid2"
+      "p-grid8";
     grid-gap: 1.5rem;
     justify-content: center;
     padding: 5rem 0;
@@ -774,7 +836,7 @@ body {
 
   body {
     display: grid;
-    grid-template-rows: 100vh 0 0 1fr 200vh;
+    grid-template-rows: 100vh 0 0 0 1fr 200vh;
   }
 }
 
