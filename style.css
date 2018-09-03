@@ -18,7 +18,6 @@ li {
   list-style-type: none;
 }
 
-
 /* animations */
 
 @keyframes 🦄 {
@@ -45,16 +44,16 @@ li {
   }
 }
 
-@keyframes 🚨{
-  0%{
+@keyframes 🚨 {
+  0% {
     transform: rotate(0);
   }
 
-  50%{
+  50% {
     transform: rotate(90deg);
   }
 
-  100%{
+  100% {
     transform: rotate(180deg);
   }
 }
@@ -112,11 +111,11 @@ li {
 
 /* grid view */
 
-#grids{
+#grids {
   display: none;
 }
 
-.grid-view{
+.grid-view {
   cursor: pointer;
   z-index: 5;
   margin-left: auto;
@@ -124,32 +123,32 @@ li {
   padding-left: 5rem;
 }
 
-.fa-grip-horizontal{
-  padding: .7rem;
+.fa-grip-horizontal {
+  padding: 0.7rem;
   border-radius: 10px;
   font-size: 2rem;
   position: relative;
 }
 
-.fa-grip-horizontal:hover{
+.fa-grip-horizontal:hover {
   color: rgb(80, 80, 80);
 }
 
-#grids:checked + .grid-view ~ .portfolio-grid{
+#grids:checked + .grid-view ~ .portfolio-grid {
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
-  "p-grid7 p-grid5 p-grid3 p-grid6"
-  "p-grid1 p-grid2 p-grid4 p-grid8";
+    "p-grid7 p-grid5 p-grid3 p-grid6"
+    "p-grid1 p-grid2 p-grid4 p-grid8";
   padding: 5rem 1rem 1rem 1rem;
 }
 
-#grids:checked + .grid-view ~ .portfolio-grid section ~ section{
+#grids:checked + .grid-view ~ .portfolio-grid section ~ section {
   font-size: 2rem;
 }
 
- /* tablet button */
+/* tablet button */
 
- .tablet-view{
+.tablet-view {
   font-size: 2rem;
   cursor: pointer;
   z-index: 5;
@@ -158,48 +157,48 @@ li {
   padding-right: 5rem;
 }
 
-.fa-tablet-alt{
-  padding: .7rem;
+.fa-tablet-alt {
+  padding: 0.7rem;
   border-radius: 10px;
 }
 
-.fa-tablet-alt:hover{
+.fa-tablet-alt:hover {
   color: rgb(80, 80, 80);
 }
 
-#tablet{
+#tablet {
   display: none;
 }
 
-#tablet:checked + .tablet-view ~ .portfolio-grid{
+#tablet:checked + .tablet-view ~ .portfolio-grid {
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  "p-grid7 p-grid8"
-  "p-grid1 p-grid1"
-  "p-grid1 p-grid1"
-  "p-grid5 p-grid3"
-  "p-grid4 p-grid4"
-  "p-grid4 p-grid4"
-  "p-grid6 p-grid2";
+    "p-grid7 p-grid8"
+    "p-grid1 p-grid1"
+    "p-grid1 p-grid1"
+    "p-grid5 p-grid3"
+    "p-grid4 p-grid4"
+    "p-grid4 p-grid4"
+    "p-grid6 p-grid2";
 }
 
-#tablet:checked + .tablet-view ~ .portfolio-grid .p-grid1{
+#tablet:checked + .tablet-view ~ .portfolio-grid .p-grid1 {
   height: 50rem;
   font-size: 6rem;
 }
 
-#tablet:checked + .tablet-view ~ .portfolio-grid .p-grid4{
+#tablet:checked + .tablet-view ~ .portfolio-grid .p-grid4 {
   height: 50rem;
   font-size: 6rem;
 }
 
 /* phone view */
 
-#phone{
+#phone {
   display: none;
 }
 
-.phone-view{
+.phone-view {
   cursor: pointer;
   z-index: 5;
   margin-left: auto;
@@ -207,32 +206,32 @@ li {
   padding-left: 0rem;
 }
 
-.fa-mobile{
-  padding: .7rem;
+.fa-mobile {
+  padding: 0.7rem;
   border-radius: 10px;
   font-size: 2rem;
   position: relative;
 }
 
-.fa-mobile:hover{
+.fa-mobile:hover {
   color: rgb(80, 80, 80);
 }
 
-#phone{
+#phone {
   display: none;
 }
 
-#phone:checked + .phone-view ~ .portfolio-grid{
+#phone:checked + .phone-view ~ .portfolio-grid {
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
-  "p-grid8"
-  "p-grid5"
-  "p-grid3"
-  "p-grid2"
-  "p-grid1"
-  "p-grid7"
-  "p-grid4"
-  "p-grid6";
+    "p-grid8"
+    "p-grid5"
+    "p-grid3"
+    "p-grid2"
+    "p-grid1"
+    "p-grid7"
+    "p-grid4"
+    "p-grid6";
 }
 
 /* nav */
@@ -270,7 +269,7 @@ nav li:hover {
 
 /* social links */
 
-.social-links{
+.social-links {
   margin-right: 2rem;
   align-content: end;
   color: white;
@@ -300,7 +299,7 @@ nav li:hover {
 
 /* main */
 
-main{
+main {
   grid-area: m-grid1;
 }
 
@@ -316,21 +315,21 @@ body {
     "m-grid6";
 }
 
-.hero-text{
+.hero-text {
   display: grid;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 2rem;
-  margin-left: 2rem;  
+  margin-left: 2rem;
   color: black;
   font-weight: 100;
   text-align: left;
   margin-top: 15rem;
 }
 
-.hero-text :first-child{
+.hero-text :first-child {
   font-size: 12rem;
   font-weight: 600;
-  text-transform: lowercase;  
+  text-transform: lowercase;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -429,7 +428,7 @@ body {
   content: "a blog that helps me sleep at night";
 }
 
-.p-grid8:after{
+.p-grid8:after {
   content: "never stop exploring";
 }
 
@@ -485,7 +484,7 @@ body {
 
 .p-grid2:hover {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
-      center / cover
+    center / cover
       url(https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=218df997df6af8353f87d87cc4d55296&auto=format&fit=crop&w=1957&q=80);
 }
 
@@ -516,15 +515,13 @@ body {
 
 .p-grid5 {
   background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
-  center / cover
-      url(img/snow.jpg);
+    center / cover url(img/snow.jpg);
   grid-area: p-grid5;
 }
 
 .p-grid5:hover {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
-  center / cover
-      url(img/snow.jpg);
+    center / cover url(img/snow.jpg);
   grid-area: p-grid5;
 }
 
@@ -535,43 +532,42 @@ body {
 
 .p-grid6 {
   background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
-  center / cover
+    center / cover
       url(https://images.unsplash.com/photo-1511745235279-2f7276d5ba65?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24f0e242519a42ad0e49912507064d5d&auto=format&fit=crop&w=1944&q=80);
   grid-area: p-grid6;
 }
 
 .p-grid6:hover {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
-  center / cover
+    center / cover
       url(https://images.unsplash.com/photo-1511745235279-2f7276d5ba65?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24f0e242519a42ad0e49912507064d5d&auto=format&fit=crop&w=1944&q=80);
 }
 
 .p-grid7 {
   background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
-  center / cover
+    center / cover
       url(https://images.unsplash.com/photo-1518684542453-94d5620df5f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b529ad36b280c715b20256e095f93ff3&auto=format&fit=crop&w=2033&q=80);
   grid-area: p-grid7;
 }
 
 .p-grid7:hover {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
-  center / cover
+    center / cover
       url(https://images.unsplash.com/photo-1518684542453-94d5620df5f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b529ad36b280c715b20256e095f93ff3&auto=format&fit=crop&w=2033&q=80);
 }
 
 .p-grid8 {
   background: linear-gradient(rgba(75, 75, 75, 0.424), rgba(36, 36, 36, 0.842)),
-  center / cover
+    center / cover
       url(https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c43eff2f7cb0c2f6838152683da69f81&auto=format&fit=crop&w=1950&q=80);
   grid-area: p-grid8;
 }
 
 .p-grid8:hover {
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
-  center / cover
+    center / cover
       url(https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c43eff2f7cb0c2f6838152683da69f81&auto=format&fit=crop&w=1950&q=80);
 }
-
 
 /* personal grid start */
 
@@ -658,12 +654,12 @@ body {
   background-color: rgb(31, 31, 31);
 }
 
-.music p{
+.music p {
   color: rgb(207, 207, 207);
   font-size: 1.5rem;
   text-align: center;
   padding: 3rem 1rem;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .music p:hover {
@@ -782,31 +778,30 @@ body {
   width: 50%;
 }
 
-@media only screen and (max-width: 1000px){
-
-  .hero-text :first-child{
+@media only screen and (max-width: 1000px) {
+  .hero-text :first-child {
     font-size: 8rem;
     padding-top: 2rem;
     margin-bottom: 7rem;
   }
-  .about-clickables{
+  .about-clickables {
     font-size: 1.3rem;
     width: 7rem;
   }
 
   .personal-grid {
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .about-me {
     grid-template-columns: 10rem 1fr;
   }
 
-  .music{
+  .music {
     width: 100vw;
   }
 
-  .music h5{
+  .music h5 {
     padding: 1rem;
   }
 
@@ -816,7 +811,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 850px) {
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -834,13 +829,13 @@ body {
     padding: 5rem 0;
   }
 
-  #grids:checked + .grid-view ~ .portfolio-grid{
+  #grids:checked + .grid-view ~ .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "p-grid7 p-grid5"
-    "p-grid3 p-grid6"
-    "p-grid1 p-grid2"
-    "p-grid4 p-grid8" ;
+      "p-grid7 p-grid5"
+      "p-grid3 p-grid6"
+      "p-grid1 p-grid2"
+      "p-grid4 p-grid8";
     padding: 5rem 1rem 1rem 1rem;
   }
 
@@ -850,18 +845,18 @@ body {
   }
 }
 
-@media only screen and (max-width: 550px){
-  nav li{
+@media only screen and (max-width: 550px) {
+  nav li {
     font-size: 1rem;
-    padding: .5rem .5rem;
+    padding: 0.5rem 0.5rem;
   }
 
-  social li{
+  social li {
     font-size: 1rem;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
-  .landing{
+  .landing {
     margin-top: 3rem;
   }
 
@@ -873,12 +868,12 @@ body {
     margin-top: 0;
   }
 
-  .about-clickables{
+  .about-clickables {
     display: flex;
     flex-direction: row;
   }
 
-  .🌭{
+  .🌭 {
     right: 0;
   }
 
@@ -886,19 +881,19 @@ body {
     margin-right: 29rem;
   }
 
-  .hero-text :first-child{
+  .hero-text :first-child {
     font-size: 4rem;
     padding-top: 12rem;
     margin-bottom: 0rem;
   }
 
   main .hero-text {
-    margin-left: 2px;  
+    margin-left: 2px;
   }
 }
 
-@media only screen and (max-width: 375px){
- .hero-text :first-child{
+@media only screen and (max-width: 375px) {
+  .hero-text :first-child {
     font-size: 3.5rem;
   }
 
@@ -907,9 +902,8 @@ body {
   }
 }
 
-@media only screen and (max-width: 350px){
-  #check:checked + .🌭 + nav:first-child{
+@media only screen and (max-width: 350px) {
+  #check:checked + .🌭 + nav:first-child {
     display: none;
   }
 }
-
