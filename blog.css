@@ -285,6 +285,12 @@ li {
   background: linear-gradient(rgb(167, 167, 167), rgb(121, 121, 121));
 }
 
+.blog4 .other-blogs-cats:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+
 footer {
   margin-top: 2rem;
   text-align: center;
@@ -294,4 +300,14 @@ footer li {
   display: inline;
   color: var(--blackSteak);
   padding: 0 2rem;
+}
+
+footer li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 2rem;
+  color: rgb(226, 226, 226);
 }
