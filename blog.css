@@ -43,6 +43,15 @@ li {
   cursor: pointer;
 }
 
+.🌭 {
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 1rem 1rem 1.3rem 1rem;
+  transition: 0.2s;
+  z-index: 15;
+}
+
 .🌭 div {
   background-color: var(--blackSteak);
   height: 4px;
@@ -166,7 +175,30 @@ li {
   grid-template-columns: repeat(4, 1fr);
   height: 30rem;
   text-align: center;
+  cursor: pointer;
   box-shadow: 4px 4px 4px rgb(190, 190, 190);
+}
+
+.fa-arrow-alt-circle-down {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.blog1 .fa-arrow-alt-circle-down,
+.blog2 .fa-arrow-alt-circle-down,
+.blog3 .fa-arrow-alt-circle-down {
+  margin-top: 2rem;
+}
+
+.blog1:hover .fa-arrow-alt-circle-down,
+.blog2:hover .fa-arrow-alt-circle-down,
+.blog3:hover .fa-arrow-alt-circle-down,
+.blog4:hover .fa-arrow-alt-circle-down {
+  opacity: 100;
+}
+
+.other-blogs .fa-arrow-alt-circle-down:hover {
+  opacity: 100;
 }
 
 .other-blogs-cats {
@@ -176,7 +208,14 @@ li {
   font-size: 1rem;
   letter-spacing: 0.5rem;
   margin-top: 10rem;
-  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.2rem;
+  transition: 0.2s;
+}
+
+.other-blogs-cats:hover {
+  cursor: pointer;
+  background-color: var(--blackSteak);
+  border: 1px solid var(--blackSteak);
 }
 
 .blog1,
@@ -186,6 +225,16 @@ li {
   background: linear-gradient(rgb(29, 29, 29), rgb(53, 53, 53));
   color: white;
   font-size: 2rem;
+  transition: 0.2s linear infinite;
+}
+
+.blog1 .other-blogs-cats:hover {
+  background-color: white;
+  color: var(--blackSteak);
+}
+
+.blog3 .other-blogs-cats:hover {
+  color: white !important;
 }
 
 .fa-burn {
@@ -204,7 +253,7 @@ li {
 }
 
 .blog2 {
-  background: linear-gradient(rgba(75, 75, 75, 0.247), rgba(36, 36, 36, 0.52)),
+  background: linear-gradient(rgba(75, 75, 75, 0.247), rgba(36, 36, 36, 0.226)),
     url(https://images.unsplash.com/photo-1535043195801-127690ea31ec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2a24e58ebe51f28ac847e23badce513a&auto=format&fit=crop&w=934&q=80);
   color: white;
 }
