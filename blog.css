@@ -79,9 +79,10 @@ li {
 
 .blog-type {
   display: inline;
-  padding: 0.3rem 1.3rem;
   border: 2px solid var(--blackSteak);
   transition: 0.2s;
+  letter-spacing: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
 }
 
 .blog-type:hover {
@@ -145,4 +146,82 @@ li {
 
 .button-divider {
   margin: 3rem 0;
+}
+
+.author-image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.author-actual {
+  width: 75px;
+  height: 75px;
+  background: center / cover url(img/author-nick.jpg);
+  border-radius: 50px;
+  margin: 0 auto 0 auto;
+}
+
+.other-blogs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 30rem;
+  text-align: center;
+  box-shadow: 4px 4px 4px rgb(190, 190, 190);
+}
+
+.other-blogs-cats {
+  border: 1px solid white;
+  color: white;
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  margin-top: 10rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+
+.blog1,
+.blog2,
+.blog3,
+.blog4 {
+  background-color: var(--blackSteak);
+  color: white;
+  font-size: 2rem;
+}
+
+.fa-burn {
+  margin-left: 0.5rem;
+}
+
+.blog-title {
+  margin-top: 1rem;
+}
+
+.blog2 {
+  background: center / cover
+    url(https://images.unsplash.com/photo-1535568824865-a801351e8483?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=560a1ec3b1631ec338eacdcfa919941e&auto=format&fit=crop&w=934&q=80);
+  color: black;
+}
+
+.blog2 .other-blogs-cats {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.est-read {
+  font-size: 1rem;
+  letter-spacing: 5px;
+  padding-top: 1rem;
+  color: rgb(146, 146, 146);
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer li {
+  display: inline;
+  color: var(--blackSteak);
+  padding: 0 2rem;
 }
