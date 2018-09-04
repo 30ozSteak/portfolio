@@ -190,6 +190,10 @@ li {
   margin-top: 2rem;
 }
 
+.blog4 .est-read {
+  color: black;
+}
+
 .blog1:hover .fa-arrow-alt-circle-down,
 .blog2:hover .fa-arrow-alt-circle-down,
 .blog3:hover .fa-arrow-alt-circle-down,
