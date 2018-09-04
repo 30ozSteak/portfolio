@@ -183,7 +183,7 @@ li {
 .blog2,
 .blog3,
 .blog4 {
-  background-color: var(--blackSteak);
+  background: linear-gradient(rgb(29, 29, 29), rgb(53, 53, 53));
   color: white;
   font-size: 2rem;
 }
@@ -196,23 +196,40 @@ li {
   margin-top: 1rem;
 }
 
-.blog2 {
-  background: center / cover
-    url(https://images.unsplash.com/photo-1535568824865-a801351e8483?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=560a1ec3b1631ec338eacdcfa919941e&auto=format&fit=crop&w=934&q=80);
-  color: black;
-}
-
-.blog2 .other-blogs-cats {
-  color: black;
-  border: 1px solid black;
-  background-color: white;
-}
-
 .est-read {
   font-size: 1rem;
   letter-spacing: 5px;
   padding-top: 1rem;
   color: rgb(146, 146, 146);
+}
+
+.blog2 {
+  background: linear-gradient(rgba(75, 75, 75, 0.247), rgba(36, 36, 36, 0.52)),
+    url(https://images.unsplash.com/photo-1535043195801-127690ea31ec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2a24e58ebe51f28ac847e23badce513a&auto=format&fit=crop&w=934&q=80);
+  color: white;
+}
+
+.blog2 .est-read {
+  color: white;
+}
+
+.blog3 {
+  background: center / cover
+    url(https://images.unsplash.com/photo-1520529890308-f503006340b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a9c0ada702444579c94bd4d1a2576f06&auto=format&fit=crop&w=1947&q=80);
+  color: var(--blackSteak);
+}
+
+.blog3 .other-blogs-cats {
+  color: var(--blackSteak);
+  border: 1px solid black;
+}
+
+.blog3 .est-read {
+  color: black;
+}
+
+.blog4 {
+  background: linear-gradient(rgb(167, 167, 167), rgb(121, 121, 121));
 }
 
 footer {
