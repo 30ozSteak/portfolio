@@ -1,0 +1,79 @@
+#check {
+  display: none;
+}
+
+.🌭 {
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 1.3rem;
+  padding: 1rem 1rem 1.3rem 1rem;
+  position: fixed;
+  right: 20px;
+  transition: 0.2s;
+  z-index: 15;
+}
+
+.🌭:hover {
+  animation: ❤️ 1s linear infinite;
+}
+
+.🌭 div {
+  background-color: rgb(31, 31, 31);
+  height: 4px;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+  width: 35px;
+}
+
+#check:checked + .🌭 .top-bun {
+  margin-top: 16px;
+  transform: rotate(-45deg);
+}
+
+#check:checked + .🌭 .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+#check:checked + .🌭 .weenie {
+  margin-top: -4px;
+  transform: rotate(45deg);
+}
+
+#check:checked + .🌭 + nav {
+  margin-right: 30rem;
+  opacity: 100;
+}
+
+nav {
+  position: fixed;
+  opacity: 0;
+  right: 0;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+nav ul {
+  margin-right: -25rem;
+  padding: 2.3rem 1rem 0 0;
+  text-align: right;
+}
+
+nav li {
+  background-color: rgb(39, 39, 39);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+nav li:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}

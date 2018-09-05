@@ -18,6 +18,31 @@ li {
   list-style-type: none;
 }
 
+nav {
+  position: fixed;
+  opacity: 0;
+  right: 0;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+nav li {
+  background-color: rgb(39, 39, 39);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+nav li:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
 /* Top nav bar blog */
 
 .top-nav {
@@ -41,45 +66,6 @@ li {
 .blog-nav li:hover {
   color: var(--blackSteak);
   cursor: pointer;
-}
-
-.🌭 {
-  background-color: rgba(255, 255, 255, 0.87);
-  border-radius: 50px;
-  cursor: pointer;
-  padding: 1rem 1rem 1.3rem 1rem;
-  transition: 0.2s;
-  z-index: 15;
-}
-
-.🌭 div {
-  background-color: var(--blackSteak);
-  height: 4px;
-  margin-top: 5px;
-  position: relative;
-  transition: 0.3s;
-  width: 35px;
-  margin-left: 5rem;
-}
-
-#check:checked + .🌭 .top-bun {
-  margin-top: 16px;
-  transform: rotate(-45deg);
-}
-
-#check:checked + .🌭 .bottom-bun {
-  opacity: 0;
-  transform: rotate(45deg);
-}
-
-#check:checked + .🌭 .weenie {
-  margin-top: -4px;
-  transform: rotate(45deg);
-}
-
-#check:checked + .🌭 + nav {
-  margin-right: 30rem;
-  opacity: 100;
 }
 
 .blog-title {
@@ -133,24 +119,6 @@ li {
   margin: 4rem 0 3rem 0;
   position: relative;
   line-height: 5rem;
-}
-
-.quote:after {
-  content: ' "\  ';
-  position: absolute;
-  font-size: 6rem;
-  top: 6rem;
-  right: -1rem;
-  color: black;
-}
-
-.quote:before {
-  content: ' "\  ';
-  position: absolute;
-  font-size: 6rem;
-  top: 0;
-  left: -2.5rem;
-  color: black;
 }
 
 .button-divider {
@@ -238,7 +206,7 @@ li {
 }
 
 .blog3 .other-blogs-cats:hover {
-  color: white !important;
+  color: white;
 }
 
 .fa-burn {
@@ -292,8 +260,10 @@ li {
 }
 
 footer {
-  margin-top: 2rem;
+  /* margin-top: 100rem;
+  bottom: 0; */
   text-align: center;
+  display: block;
 }
 
 footer li {
@@ -308,6 +278,44 @@ footer li:hover {
 }
 
 footer p {
-  margin-top: 2rem;
   color: rgb(226, 226, 226);
+}
+
+@media only screen and (max-width: 950px) {
+  .quote {
+    font-size: 1.5rem;
+    margin: 4rem 0 3rem 0;
+    position: relative;
+    line-height: 5rem;
+  }
+
+  .blog-start,
+  .blog-bottom,
+  .blog-closure {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .other-blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 30rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px rgb(190, 190, 190);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .other-blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 25rem);
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px rgb(190, 190, 190);
+  }
+  /* footer {
+    display: none;
+  } */
 }
